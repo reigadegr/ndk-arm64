@@ -14,5 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Deps
-        run: sudo apt install repo poetry
+        run: sudo apt install repo
+      - name: Setup Poetry
+        uses: Gr1N/setup-poetry@v9
       - run: bash build.sh
