@@ -13,4 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Deps
+        run: apt install repo
       - run: bash build.sh
